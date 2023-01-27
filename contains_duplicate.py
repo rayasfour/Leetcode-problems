@@ -7,7 +7,9 @@
 # Output: true
 
 # SOLUTION 1 (Using set)
-# Runtime 50ms. Time complexity O(n). 
+# Runtime 50ms
+# Time Complexity O(n^2) 
+# Space Complexity O(1)
 class Solution:
     def containsDuplicate(self, nums: List[int]):
         unique_list = []
@@ -21,7 +23,9 @@ class Solution:
         return True
 
 # SOLUTION 2 (Using set)
-# Small modification from solution 1. Runtime 40ms. Time complexity O(n). 
+# Runtime 40ms 
+# Time complexity O(n^2)
+# Space Complexity O(1)
 class Solution:
     def containsDuplicate(self, nums: List[int]):
         unique_list = []
@@ -32,6 +36,9 @@ class Solution:
         return len(unique_list) != len(nums)
 
 # SOLUTION 3 (Using sort)
+# Runtime 34ms
+# Time Complexity nlog(n)
+# Space Complexity O(1)
 class Solution:
     def containsDuplicate(self, nums: List[int]):
         nums.sort()

@@ -18,4 +18,4 @@ class Solution:
                     final_number = result / each
                     answer = []
                     answer.append(final_number)
-            return answer
+        return answer

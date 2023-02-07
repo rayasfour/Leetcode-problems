@@ -9,3 +9,13 @@
 # Output: [24,12,8,6]
 
 # SOLUTION 1
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        for i in range(len(nums)-1):
+            result = nums[i] * nums [i+1]
+            for each in nums:
+                if each != 0:
+                    final_number = result / each
+                    answer = []
+                    answer.append(final_number)
+            return answer

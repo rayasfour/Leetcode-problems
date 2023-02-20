@@ -8,7 +8,7 @@
 # Input: nums = [1,2,3,4]
 # Output: [24,12,8,6]
 
-# SOLUTION 1
+# SOLUTION 1: without restriction
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         for i in range(len(nums)-1):
@@ -19,3 +19,7 @@ class Solution:
                     answer = []
                     answer.append(final_number)
         return answer
+
+# SOLUTION 2: with restriction (no division operator)
+class Solution:
+    def

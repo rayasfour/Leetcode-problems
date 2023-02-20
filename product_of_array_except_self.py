@@ -21,5 +21,27 @@ class Solution:
         return answer
 
 # SOLUTION 2: with restriction (no division operator)
+# Flawed answer, does not work
+# Time complexity: O(n)
+# Space complexity: O(n)
 class Solution:
-    def
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        pre_fix=[]
+        post_fix=[]
+        output=[]
+        for i in range(len(nums)):
+            if nums[0]:
+                pre_fix.append(nums[i])
+            answer = nums[i] * nums[i+1]
+            pre_fix.append(answer)
+        
+        for i in range(lens(nums)):
+            if nums[-1]:
+                post_fix.append(nums[-1])
+            answer = nums[i] * nums[i-1]
+            pre_fix.append(answer)
+        
+        for i in range(lens(nums)):
+            answer = pre_fix[i-1] * post_fix[i+1]
+            output.append(answer)
+            return answer

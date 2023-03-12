@@ -10,6 +10,9 @@
 # A Sudoku board (partially filled) could be valid but is not necessarily solvable.
 # Only the filled cells need to be validated according to the mentioned rules.
 
+# SOLUTION 1
+# Time Complexity O(9^2)
+# Memory Complexity O(9^2)
 class Solution:
     def valid_row(board):
         for list in board:

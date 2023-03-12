@@ -10,16 +10,9 @@
 # A Sudoku board (partially filled) could be valid but is not necessarily solvable.
 # Only the filled cells need to be validated according to the mentioned rules.
 
-# SOLUTION 1
-# Time Complexity O(9^2)
-# Memory Complexity O(9^2)
+# SOLUTION 1 [ROUGH IDEA]
 class Solution:
     def valid_row(board):
-        for list in board:
-            for number in list:
-                if number[i] != number[i-1]:
-                    unique_numbers = []
-                    unique_numbers.append(number[i])
         return True
     def valid_column():
         return True
@@ -29,3 +22,16 @@ class Solution:
         if valid_row(board) and valid_column(board) and valid_box(board):
             return True
         return False
+
+# SOLUTION 2
+# Time Complexity O(9^2)
+# Memory Complexity O(9^2)
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        # Create Hashmap
+        # The key of hashmap will be the location on the grid
+        # The value will be the set of numbers in that box
+        # There are nine 3x3 boxes
+        cols = collections.defaultdict(set)
+        rows = collections.defaultdict(set)
+        squares = collections.defaultdict(set)

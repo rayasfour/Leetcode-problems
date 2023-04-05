@@ -7,6 +7,7 @@ class Solution:
             # Base cases
             if i == 0:
                 return nums[0]
+            
             elif i == 1:
                 return max(nums[0], nums[1])
             

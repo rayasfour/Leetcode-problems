@@ -1,6 +1,7 @@
 # Using Top-down DP Programming
 
 class Solution:
+    
     def rob(self, nums: List[int]) -> int:
         memo = {}
         

@@ -1,5 +1,5 @@
 # Example 1: Given an array of positive integers nums and an integer k, 
-# find the length of the longest subarray whose sum is less than or equal to k.
+# Find the length of the longest subarray whose sum is less than or equal to k.
 
 def find_length(nums, k):
     left = curr = ans = 0

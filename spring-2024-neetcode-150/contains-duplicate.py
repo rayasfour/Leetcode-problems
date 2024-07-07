@@ -2,9 +2,8 @@
 # Create an empty list, unique
 # Loop through all values in the original list
 # If the value doesn't exist in unique[], add it to unique
-# If it already exists in unique[], return False
-# If all values are unique, and the original list is now empty, return True
-
+# Compare list length of unique[] and original list, if the two list lengths are identical, return False
+ 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         unique = []
@@ -15,3 +14,13 @@ class Solution:
             return False
         return True
 
+# SOLUTION 2
+# Use Hash set
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        hashset = set()
+        for number in nums:
+            if number in hashset:
+                return True
+            hashset.add(number)
+        return False

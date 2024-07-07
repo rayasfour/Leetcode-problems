@@ -4,6 +4,9 @@ class Solution:
         sorted_s = []
         sorted_t = []
 
+        if len(s) != len(t):
+            return False
+        
         for letter in s:
             sorted_s.append(letter)
 
@@ -15,3 +18,4 @@ class Solution:
         if sorted_s == sorted_t:
             return True
         return False
+    

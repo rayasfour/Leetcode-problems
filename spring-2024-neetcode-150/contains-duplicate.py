@@ -1,4 +1,4 @@
-# SOLUTION 1
+# SOLUTION 1: Additional List
 # Create an empty list, unique
 # Loop through all values in the original list
 # If the value doesn't exist in unique[], add it to unique
@@ -14,8 +14,7 @@ class Solution:
             return False
         return True
 
-# SOLUTION 2
-# Use Hash set
+# SOLUTION 2: Hash Set
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         hashset = set()
